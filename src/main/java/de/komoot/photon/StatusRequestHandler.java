@@ -32,11 +32,11 @@ public class StatusRequestHandler implements Handler {
     @OpenApi(
         path = "/status",
         methods = {HttpMethod.GET},
-        summary = "Server status",
-        description = "Returns the current status of the Photon server including version and import date.",
-        tags = {"Status"},
+        operationId = "status",
+        description = "Get service status and import date of the database.",
+        tags = {"Photon Geocoding"},
         responses = {
-            @OpenApiResponse(status = "200", description = "Server status information",
+            @OpenApiResponse(status = "200", description = "Service status and database import date.",
                 content = @OpenApiContent(from = PhotonStatus.class, type = "application/json"))
         }
     )

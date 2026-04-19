@@ -339,9 +339,11 @@ public class App {
                     .withDocumentationPath("/openapi")
                     .withDefinitionConfiguration((version, builder) -> builder
                             .info(info -> info
-                                    .title("Photon Geocoder API")
+                                    .title("Photon Geocoding API")
+                                    .summary("photon is an open source geocoder built for OpenStreetMap data. " +
+                                             "It is based on OpenSearch — an efficient, powerful and highly scalable search platform.")
                                     .version("1.1.0")
-                                    .description("Forward and reverse geocoder built on OpenStreetMap data.")
+                                    .license("Apache-2.0", "https://opensource.org/licenses/Apache-2.0", null)
                             )
                     )
             ));
